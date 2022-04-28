@@ -1,7 +1,7 @@
 var mysql = require('mysql');
 
 
-var rdsUrl = 'hotel-app-datastore.cluster-ccd6ligqeyyt.us-east-1.rds.amazonaws.com';
+var rdsUrl = 'hotel-app-database.cluster-ccd6ligqeyyt.us-east-1.rds.amazonaws.com';
 var password =  'apprunner';
 var user = 'admin';
 
