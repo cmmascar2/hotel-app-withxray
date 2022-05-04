@@ -20,7 +20,7 @@ router.post('/', function(req, res, next) {
     // console.log('Missing room id, floor or has view parameters');
     // res.send('Missing room id, floor or has view parameters');
     
-    res.send(createError(500));
+    res.send(new Error('Missing room id, floor or has view parameters'));
     // throw new Error('Missing room id, floor or has view parameters');
   }
 });
