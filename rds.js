@@ -1,8 +1,8 @@
 var mysql = require('mysql');
 
 
-var rdsUrl = 'hotel-app-database.cluster-ciq70fzmcyor.us-east-1.rds.amazonaws.com';
-var password =  'hotelapp123';
+var rdsUrl = 'hotel-app-database-instance-1.ccd6ligqeyyt.us-east-1.rds.amazonaws.com';
+var password =  'apprunner';
 var user = 'admin';
 
 // mysql connection pool
