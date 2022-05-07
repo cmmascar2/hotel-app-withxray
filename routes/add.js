@@ -17,7 +17,6 @@ router.post('/', function (req, res, next) {
       });
     });
   } else {
-    console.log('Missing room id, floor or has view parameters');
     throw new Error('Missing room id, floor or has view parameters');
   }
 });
