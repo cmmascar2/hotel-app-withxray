@@ -1,18 +1,26 @@
 extends layout
 
 block content
-  h2 #{title}
-  p Rooms stored in database: <em>#{url}<em>
+  p
+  .alert.alert-info(style='margin: auto; width: 80%', role='alert') Rooms stored in database: #{url}
+  p
+  h2(style='text-align: center;') Rooms List
 
-  table
-    thead
+  table.table.table-striped.table-hover(style='margin-left: auto; margin-right: auto; width: 60%;')
+    thead.table-primary
       tr
-        th ID
-        th Floor
-        th Has View
+        th(scope='col') #
+        th(scope='col') Room Number
+        th(scope='col') Floor Number
+        th(scope='col') Good View
     tbody
       - each room in rooms
         tr
+          th(scope='row') 1
           td= room.id
           td= room.floor
-          td= room.hasView
+          td
+            - if(room.hasView == 'Yes')
+                span.badge.rounded-pill.bg-success #{view}
+            - else
+                span.badge.rounded-pill.bg-danger #{view}

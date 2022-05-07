@@ -1,12 +1,21 @@
 extends layout
 
 block content
-  h1= title
-  hr
-  p Welcome to #{title}!
-  p Options:
-  p   #[a(href='/rooms') /rooms] : display rooms by querying database through a VPC to VPC connection
-  p   #[a(href='/add') /add] : add a new room
-  p   #[a(href='/create') /create] : create table in the database if not exists
-  hr
-  p VPC test v1.5
+  nav.navbar.navbar-expand-lg.navbar-light.bg-primary(style='margin-top: 10px;')
+      .container-fluid
+        a.navbar-brand(href='#')
+          img.d-inline-block.align-text-top(src='https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg' alt='' width='30' height='24')
+          span(style='margin-left: 10px;') AWS Hotel
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarNav.collapse.navbar-collapse
+          ul.navbar-nav
+            li.nav-item
+            a.nav-link.active(aria-current='page' href='#') Home
+            li.nav-item
+              a.nav-link(href='/rooms') Rooms
+            li.nav-item
+              a.nav-link(href='/add') Add
+            li.nav-item
+              a.nav-link(href='/create') Create
+    img(src='/public/hotel_landing_pic.jpeg' alt='no image available' style='display: block; margin-left: auto; margin-right: auto; width: 100%;')
