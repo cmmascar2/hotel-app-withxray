@@ -16,11 +16,11 @@ block content
     tbody
       - each room, i in rooms
         tr
-          th(scope='row')= i
+          th(scope='row')= i+1
           td= room.id
           td= room.floor
           td
-            - if(room.hasView == 'Yes')
-                span.badge.rounded-pill.bg-success #{room.hasView}
+            - if(room.hasView == 1)
+                span.badge.rounded-pill.bg-success Yes
             - else
-                span.badge.rounded-pill.bg-danger #{room.hasView}
+                span.badge.rounded-pill.bg-danger No
