@@ -1,9 +1,9 @@
 var mysql = require('mysql');
 
 
-var rdsUrl = 'replace with endpoint to the RDS';
-var password =  'replace with password to the RDS';
-var user = 'replace with user to the RDS';
+var rdsUrl = 'aa1luiox7vpon2l.ciprr7xmanvd.us-east-1.rds.amazonaws.com';
+var password =  'iluvVtoN';
+var user = 'root';
 
 // mysql connection pool
 var rdsPool = mysql.createPool({
