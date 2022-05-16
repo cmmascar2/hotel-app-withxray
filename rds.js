@@ -2,7 +2,7 @@ var mysql = require('mysql');
 
 
 var rdsUrl = 'aa1luiox7vpon2l.ciprr7xmanvd.us-east-1.rds.amazonaws.com';
-var password =  'iluvVtoN';
+var password = 'iluvVtoN';
 var user = 'root';
 
 // mysql connection pool
